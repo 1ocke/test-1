@@ -1,1 +1,66 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f6f6f6;
+  padding: 22px 0;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-menu__item:not(:last-child) {
+  margin-right: 63px;
+}
+
+.main-menu__link {
+  padding: 27px 6px;
+  color: #000000;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+.main-menu__link:hover {
+  background-color: #ffea00;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+.main-nav {
+  margin: 20px;
+}
+/*# sourceMappingURL=main.css.map */
