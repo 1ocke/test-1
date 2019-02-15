@@ -20,44 +20,48 @@ li {
 
 // ------------------------------------------------------
 
+
+
+
 // ---------------------HEADER---------------------------
 
 .main-header {
-    background-color: #f6f6f6;
+    background: #f6f6f6;
     padding: 22px 0;
-}
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    width: 1400px;
-    margin: 0 auto;
-}
+    .header-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
 
-.main-menu {
-    display: flex;
-}
+        #menu-checkbox {
+            display: none;
+        }
 
-.main-menu__item:not(:last-child) {
-    margin-right: 63px;
-}
+        nav {
+            margin-top: 20px;
 
-.main-menu__link {
-    padding: 27px 6px;
-    color: #000000;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1.6px;
-}
+            .main-menu {
+                display: flex;
 
-.main-menu__link:hover {
-    background-color: #ffea00;
-}
+                .menu-item:not(:last-child) {
+                    margin-right: 63px;
+                }
 
-#menu-checkbox {
-    display: none;
-}
+                &__link {
+                    color: #000;
+                    font-size: 16px;
+                    padding: 27px 6px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.6px; 
 
-.main-nav {
-    margin: 20px;
+                    &:hover {
+                        background-color: #ffea00;
+                    }
+                }
+            }
+        }
+    }
 }
+// -----------------------------------------------------
