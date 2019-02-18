@@ -63,4 +63,48 @@ li {
 .main-header .header-container nav .main-menu__link:hover {
   background-color: #ffea00;
 }
+
+@media screen and (max-width: 420px) {
+  .main-header .header-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-header .header-container .main-nav .toggle-button {
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: #000000;
+  }
+  .main-header .header-container .main-nav .toggle-button::after {
+    content: attr(data-open);
+    display: block;
+  }
+  .main-header .header-container .main-nav .main-menu {
+    display: none;
+    position: relative;
+    top: 15px;
+    right: 60px;
+  }
+  .main-header .header-container .main-nav .main-menu .menu-item {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+  }
+  .main-header .header-container .main-nav .main-menu .menu-item .main-menu__link {
+    display: block;
+    padding: 8px;
+    margin-right: -115px;
+  }
+  .main-header .header-container #menu-checkbox:checked + .main-nav .main-menu {
+    display: block;
+  }
+  .main-header .header-container #menu-checkbox:checked + .main-nav .toggle-button::after {
+    content: attr(data-close);
+  }
+}
 /*# sourceMappingURL=main.css.map */
