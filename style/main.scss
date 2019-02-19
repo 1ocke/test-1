@@ -18,6 +18,17 @@ li {
     list-style: none;
 }
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
 // ------------------------------------------------------
 
 
@@ -127,3 +138,90 @@ li {
 // -----------------------------------------------------
 
 //-----------------------MAIN---------------------------
+
+.main-content {
+    .top-container {
+        background: url(/images/main-bg.jpg) no-repeat;
+        background-size: 100%;
+        padding-top: 136px;
+        padding-bottom: 255px;
+        max-height: 700px;
+        height: 100%;
+
+        .top-slide {
+            width: 85%;
+            margin: 0 auto;
+
+            :nth-child(2) {
+                margin-bottom: 10px;
+            }
+
+            &__title {
+                display: inline;
+                background-color: #ffea00;
+                text-transform: uppercase;
+                color: #000000;
+                font-size: 70px;
+                padding: 0 13px;
+            }
+
+            &__subtitle {
+                display: inline;
+                background-color: #414146;
+                color: #ffffff;
+                font-size: 24px;
+                padding: 0 4px;
+            }
+        }
+    }
+
+    .specialize-container {
+        padding-top: 90px;
+        background-color: #f6f6f6;
+
+        .specialize {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+
+            &__title {
+                color: #424147;
+                font-size: 35px;
+                text-transform: uppercase;
+            }
+
+            &__subtitle {
+                margin-bottom: 40px;
+                color: #424147;
+                font-size: 24px;
+            }
+
+            .cards-block {
+                display: flex;
+                justify-content: space-between;
+
+                .card {
+
+                    .top-card {
+
+                    }
+    
+                    .bottom-card {
+                        background-color: #414146;
+                        position: relative;
+                        top: -10px;
+    
+                        .bottom-card__description {
+                            padding: 10px;
+                            color: #ffffff;
+                            font-size: 20px;
+                            letter-spacing: 2px;
+                            line-height: 23px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
