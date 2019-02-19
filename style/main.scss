@@ -142,11 +142,9 @@ li {
 .main-content {
     .top-container {
         background: url(/images/main-bg.jpg) no-repeat;
-        background-size: 100%;
+        background-size: cover;
         padding-top: 136px;
         padding-bottom: 255px;
-        max-height: 700px;
-        height: 100%;
 
         .top-slide {
             width: 85%;
