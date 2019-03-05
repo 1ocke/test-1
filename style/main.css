@@ -78,50 +78,6 @@ li {
   background-color: #ffea00;
 }
 
-@media screen and (max-width: 420px) {
-  .main-header .header-container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .main-header .header-container .main-nav .toggle-button {
-    margin-top: 20px;
-    text-align: center;
-    display: block;
-    cursor: pointer;
-    color: #000000;
-  }
-  .main-header .header-container .main-nav .toggle-button::after {
-    content: attr(data-open);
-    display: block;
-  }
-  .main-header .header-container .main-nav .main-menu {
-    display: none;
-    position: relative;
-    top: 15px;
-    right: 60px;
-  }
-  .main-header .header-container .main-nav .main-menu__item {
-    width: 100%;
-    display: block;
-    font-size: 12px;
-  }
-  .main-header .header-container .main-nav .main-menu__link {
-    display: block;
-    padding: 8px;
-    margin-right: -115px;
-  }
-  .main-header .header-container #menu-checkbox:checked + .main-nav .main-menu {
-    display: block;
-  }
-  .main-header .header-container #menu-checkbox:checked + .main-nav .toggle-button::after {
-    content: attr(data-close);
-  }
-}
-
 .main-content .top-container {
   background: url(/images/main-bg.jpg) no-repeat;
   background-size: cover;
@@ -244,5 +200,103 @@ li {
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 420px) {
+  .main-header .header-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-header .header-container .main-nav .toggle-button {
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: #000000;
+  }
+  .main-header .header-container .main-nav .toggle-button::after {
+    content: attr(data-open);
+    display: block;
+  }
+  .main-header .header-container .main-nav .main-menu {
+    display: none;
+    position: relative;
+    top: 15px;
+    right: 60px;
+  }
+  .main-header .header-container .main-nav .main-menu__item {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+  }
+  .main-header .header-container .main-nav .main-menu__link {
+    display: block;
+    padding: 8px;
+    margin-right: -115px;
+  }
+  .main-header .header-container #menu-checkbox:checked + .main-nav .main-menu {
+    display: block;
+  }
+  .main-header .header-container #menu-checkbox:checked + .main-nav .toggle-button::after {
+    content: attr(data-close);
+  }
+  .main-content .top-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .main-content .top-container .top-slide {
+    text-align: center;
+  }
+  .main-content .top-container .top-slide__title {
+    font-size: 55px;
+  }
+  .main-content .top-container .top-slide__subtitle {
+    font-size: 20px;
+  }
+  .main-content .specialize-container {
+    padding-top: 20px;
+  }
+  .main-content .specialize-container .specialize__title {
+    font-size: 28px;
+  }
+  .main-content .specialize-container .specialize__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .main-content .specialize-container .cards-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-content .specialize-container .cards-block .card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .main-content .specialize-container .cards-block .bottom-card {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .main-content .portfolio {
+    padding-top: 20px;
+  }
+  .main-content .portfolio__posts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .main-content .portfolio__posts .post {
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=main.css.map */
