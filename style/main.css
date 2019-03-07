@@ -225,6 +225,93 @@ li {
   margin-bottom: 30px;
 }
 
+.main-footer {
+  background-color: #414146;
+  padding: 30px 65px;
+  color: #ffffff;
+}
+
+.main-footer .footer-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 37% 33%;
+      grid-template-columns: 33% 37% 33%;
+  grid-column-gap: 3%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-footer .footer-container .about-us__title, .main-footer .footer-container .tweets__title, .main-footer .footer-container .contacts__title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.main-footer .footer-container .about-us__link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 10px 15px;
+  background-color: #000000;
+  border-bottom: 2px solid #ffea00;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.main-footer .footer-container .about-us__images {
+  margin-top: 15px;
+}
+
+.main-footer .footer-container .tweets__image {
+  margin-right: 10px;
+}
+
+.main-footer .footer-container .tweets__description span {
+  color: #ffea00;
+}
+
+.main-footer .footer-container .tweets__description:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+
+.main-footer .footer-container .tweets__icons .icon-title {
+  margin-top: 55px;
+  font-size: 18px;
+}
+
+.main-footer .footer-container .contacts__image {
+  margin-right: 10px;
+}
+
+.main-footer .footer-container .contacts__description span {
+  color: #ffea00;
+}
+
+.main-footer .footer-container .contacts__description:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.footer-nav {
+  background-color: #000000;
+  padding: 30px;
+}
+
+.footer-nav .navigation {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-nav .navigation__link {
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 420px) {
   .main-header .header-container {
     width: 100%;

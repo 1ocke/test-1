@@ -233,6 +233,103 @@ li {
     }
 }
 
+.main-footer {
+    background-color: #414146;
+    padding: 30px 65px;
+    color: #ffffff;
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 33% 37% 33%;
+        grid-column-gap: 3%;
+        width: 90%;
+        margin: 0 auto;
+
+        .about-us, .tweets, .contacts {
+            &__title {
+                margin-bottom: 20px;
+                font-size: 18px;
+                font-weight: 100;
+            }
+        }
+
+        .about-us {
+            &__link {
+                display: inline-block;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                padding: 10px 15px;
+                background-color: #000000;
+                border-bottom: 2px solid #ffea00;
+                color: #ffffff;
+                font-size: 15px;
+            }
+
+            &__images {
+                margin-top: 15px;
+            }
+        }
+
+        .tweets {
+            &__image {
+                margin-right: 10px;
+            }
+
+            &__description {
+                span {
+                    color: #ffea00;
+                }
+            }
+
+            &__description:not(:last-of-type) {
+                margin-bottom: 50px;
+            }
+
+            &__icons {
+                
+                .icon-title {
+                    margin-top: 55px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .contacts {
+            &__image {
+                margin-right: 10px;
+            }
+
+            &__description {
+                span {
+                    color: #ffea00;
+                }
+            }
+
+            &__description:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.footer-nav {
+    background-color: #000000;
+    padding: 30px;
+
+    .navigation {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        &__link {
+            font-size: 16px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+    }
+}
+
 // -----------------------------------------------------------------------
 // ------------------------------MEDIA------------------------------------
 // -----------------------------------------------------------------------
@@ -357,5 +454,9 @@ li {
         .brand-slider {
             padding-top: 20px;
         }
+    }
+
+    .main-footer {
+        
     }
 }
