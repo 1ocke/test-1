@@ -206,6 +206,31 @@ li {
             margin: 0 auto;
         }
     }
+
+    .brand-slider {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
+        text-align: center;
+
+        &__title {
+            display: inline-block;
+
+            color: #ffea00;
+            font-size: 18px;
+            text-transform: uppercase;
+
+            background-color: #424147;
+            padding: 5px 25px;
+            margin-bottom: 30px;
+        }
+
+        &__description {
+            color: #424146;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 // -----------------------------------------------------------------------
@@ -327,6 +352,10 @@ li {
                     overflow: hidden;
                 }
             }
+        }
+
+        .brand-slider {
+            padding-top: 20px;
         }
     }
 }

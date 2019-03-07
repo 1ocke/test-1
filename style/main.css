@@ -202,6 +202,29 @@ li {
   margin: 0 auto;
 }
 
+.main-content .brand-slider {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.main-content .brand-slider__title {
+  display: inline-block;
+  color: #ffea00;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #424147;
+  padding: 5px 25px;
+  margin-bottom: 30px;
+}
+
+.main-content .brand-slider__description {
+  color: #424146;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 420px) {
   .main-header .header-container {
     width: 100%;
@@ -297,6 +320,9 @@ li {
   }
   .main-content .portfolio__posts .post {
     overflow: hidden;
+  }
+  .main-content .brand-slider {
+    padding-top: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

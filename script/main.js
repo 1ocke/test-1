@@ -10,4 +10,20 @@ $(function() {
     $('.showAll').click(function() {
         $('.post').show(500);
     });
-})
+});
+
+$(function(){
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        responsive: {
+            300: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 8,
+                nav: false
+            }
+        }
+    });
+});
